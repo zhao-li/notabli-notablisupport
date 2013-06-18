@@ -6,10 +6,10 @@ require 'notabli/notablisupport/version'
 Gem::Specification.new do |spec|
   spec.name          = "notabli-notablisupport"
   spec.version       = Notabli::Notablisupport::VERSION
-  spec.authors       = ["zli"]
+  spec.authors       = ["Zhao Li"]
   spec.email         = ["zhao.li@startingspark.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{A collection of utility objects to communicate with NotabLiSupport servers.}
+  spec.summary       = spec.description
   spec.homepage      = ""
   spec.license       = "MIT"
 
