@@ -5,7 +5,7 @@ require 'notab_li/notifiers/notab_li_support'
 
 Gem::Specification.new do |spec|
   spec.name          = "notabli-notablisupport"
-  spec.version       = NotabLiSupport::VERSION
+  spec.version       = NotabLiSupport.version
   spec.authors       = ["Zhao Li"]
   spec.email         = ["zhao.li@startingspark.com"]
   spec.description   = %q{A collection of utility objects to communicate with NotabLiSupport servers.}
