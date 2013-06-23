@@ -1,26 +1,5 @@
 class NotabLiSupport::StackOverflow
-  class QuestionGetResponse
-    def initialize(user_id, *args)
-      @user_id = self.class.open? ? nil : user_id
-      @options = args.extract_options!
-    end
-
-    # move to base class
-    def self.resource_hostname
-      to_s.deconstantize.constantize.resource_hostname
-    end
-    def self.notifier_hostname
-      to_s.deconstantize.constantize.resource_hostname
-    end
-    def self.notifier
-      to_s.deconstantize.deconstantize.constantize
-    end
-    def self.service
-      to_s.deconstantize.constantize
-    end
-    #####
-
-    # MAIN
+  class QuestionGetResponse < ::NotabLi::Strategies
     def self.open?
       true
     end
