@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'notab_li/notifiers/notab_li_support'
+require 'notabli-notablisupport/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "notabli-notablisupport"
-  spec.version       = NotabLiSupport.version
+  spec.version       = NotabLiNotabLiSupport::VERSION
   spec.authors       = ["Zhao Li"]
   spec.email         = ["zhao.li@startingspark.com"]
   spec.description   = %q{A collection of utility objects to communicate with NotabLiSupport servers.}
